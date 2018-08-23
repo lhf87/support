@@ -7,7 +7,6 @@ import com.lhf.common.converter.NotFoundConversionException;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.cglib.beans.BeanCopier;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -86,6 +85,9 @@ public final class Converters {
 
         Class targetClass = target.getClass();
         for(Object source : sources) {
+            if (source == null) {
+                continue;
+            }
             Converter converter = CONVERTER_CACHE.get(generateKey(source.getClass(), targetClass, ConverterEnum.MERGER));
             if (converter != null) {
                 try {
