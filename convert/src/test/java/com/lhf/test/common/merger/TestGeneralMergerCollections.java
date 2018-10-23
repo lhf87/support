@@ -1,10 +1,10 @@
 package com.lhf.test.common.merger;
 
-import com.lhf.common.converter.ConvertException;
-import com.lhf.common.converter.Converter;
-import com.lhf.common.converter.ConverterAdapter;
-import com.lhf.common.converter.ConverterEnum;
-import com.lhf.common.register.RegisterFactory;
+import com.lhf.common.convert.converter.ConvertException;
+import com.lhf.common.convert.converter.Converter;
+import com.lhf.common.convert.converter.ConverterAdapter;
+import com.lhf.common.convert.converter.ConverterEnum;
+import com.lhf.common.convert.register.RegisterFactory;
 import com.lhf.test.common.bean.TestDO;
 import com.lhf.test.common.bean.TestDO2;
 import com.lhf.test.common.bean.TestDTO;

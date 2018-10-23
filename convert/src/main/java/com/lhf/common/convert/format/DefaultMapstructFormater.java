@@ -1,4 +1,4 @@
-package com.lhf.common.format;
+package com.lhf.common.convert.format;
 
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.Named;

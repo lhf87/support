@@ -1,4 +1,4 @@
-package com.lhf.common.converter;
+package com.lhf.common.convert.converter;
 
 import lombok.Builder;
 import lombok.Data;

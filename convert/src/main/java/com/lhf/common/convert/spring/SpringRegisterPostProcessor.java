@@ -1,6 +1,6 @@
-package com.lhf.common.spring;
+package com.lhf.common.convert.spring;
 
-import com.lhf.common.register.RegisterFactory;
+import com.lhf.common.convert.register.RegisterFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;

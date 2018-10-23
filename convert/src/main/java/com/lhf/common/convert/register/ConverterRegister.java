@@ -1,4 +1,4 @@
-package com.lhf.common.register;
+package com.lhf.common.convert.register;
 
 /**
  * 转换器注册接口

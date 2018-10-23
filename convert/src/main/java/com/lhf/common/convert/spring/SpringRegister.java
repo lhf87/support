@@ -1,4 +1,4 @@
-package com.lhf.common.spring;
+package com.lhf.common.convert.spring;
 
 /**
  * spring注册器

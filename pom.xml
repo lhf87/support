@@ -23,5 +23,6 @@
     </build>
     <modules>
         <module>convert</module>
+        <module>reflect</module>
     </modules>
 </project>

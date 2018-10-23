@@ -1,6 +1,6 @@
 package com.lhf.test.common.spring;
 
-import com.lhf.common.Converters;
+import com.lhf.common.convert.Converters;
 import com.lhf.test.common.bean.TestDO;
 import com.lhf.test.common.bean.TestDO2;
 import com.lhf.test.common.bean.TestDTO;

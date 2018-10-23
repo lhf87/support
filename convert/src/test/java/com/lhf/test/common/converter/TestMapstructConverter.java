@@ -1,7 +1,7 @@
 package com.lhf.test.common.converter;
 
-import com.lhf.common.format.DefaultMapstructFormater;
-import com.lhf.common.register.RegisterFactory;
+import com.lhf.common.convert.format.DefaultMapstructFormater;
+import com.lhf.common.convert.register.RegisterFactory;
 import com.lhf.test.common.bean.TestDO;
 import com.lhf.test.common.bean.TestDTO;
 import com.lhf.test.common.bean.TestListDO;

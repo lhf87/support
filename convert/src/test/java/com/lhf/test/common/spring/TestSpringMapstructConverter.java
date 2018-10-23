@@ -1,6 +1,6 @@
 package com.lhf.test.common.spring;
 
-import com.lhf.common.spring.SpringRegister;
+import com.lhf.common.convert.spring.SpringRegister;
 import com.lhf.test.common.bean.TestDO;
 import com.lhf.test.common.bean.TestDTO;
 import org.mapstruct.Mapper;

@@ -1,10 +1,10 @@
-package com.lhf.common.register;
+package com.lhf.common.convert.register;
 
 
 
-import com.lhf.common.Converters;
-import com.lhf.common.converter.Converter;
-import com.lhf.common.utils.Assert;
+import com.lhf.common.convert.Converters;
+import com.lhf.common.convert.converter.Converter;
+import com.lhf.common.convert.utils.Assert;
 
 /**
  * 普通的convert注册器

@@ -1,7 +1,7 @@
-package com.lhf.common.register;
+package com.lhf.common.convert.register;
 
-import com.lhf.common.converter.Converter;
-import com.lhf.common.utils.Assert;
+import com.lhf.common.convert.converter.Converter;
+import com.lhf.common.convert.utils.Assert;
 import org.mapstruct.factory.Mappers;
 
 import java.util.Collection;
