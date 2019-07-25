@@ -84,7 +84,7 @@ public final class Converters {
         }
 
         Class targetClass = target.getClass();
-        for(Object source : sources) {
+        for (Object source : sources) {
             if (source == null) {
                 continue;
             }
@@ -92,8 +92,8 @@ public final class Converters {
             if (converter != null) {
                 try {
                     converter.merge(target, source);
-                } catch (ConvertException e) {
-                    log.error("{} merge to {} error", source.getClass(), targetClass, e);
+                } catch (ConvertException ce) {
+                    log.error("{} merge to {} error", source.getClass(), targetClass, ce);
                 }
             } else {
                 throw new NotFoundConversionException(source.getClass(), targetClass);
