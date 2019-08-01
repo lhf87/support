@@ -65,12 +65,20 @@ public class ReflectionKit {
         }
     }
 
-    public static <T> Set<Class<? extends T>> scan(String packageToScan,
+    /**
+     * 扫描某接口的实现类或子类
+     * @param packageToScan 包路径
+     * @param clazz 接口
+     * @param annotation 注解
+     * @param <T> T
+     * @return 接口的实现类
+     */
+    public static <T> Set<Class<? extends T>> scanSub(String packageToScan,
                                                    Class<T> clazz,
                                                    Class<? extends Annotation> annotation) {
         ConfigurationBuilder cb = new ConfigurationBuilder().setUrls(ClasspathHelper.forJavaClassPath());
 
-        if(Strings.isNullOrEmpty(packageToScan)) {
+        if(!Strings.isNullOrEmpty(packageToScan)) {
             cb.filterInputsBy(new FilterBuilder().includePackage(packageToScan));
         }
 
