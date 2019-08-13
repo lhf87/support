@@ -41,10 +41,18 @@ public class ReflectionKit {
         .put(double.class, 0D)
         .build();
 
+    /**
+     * class.newInstance只能new无参构造的类
+     * 扩展newInstance对有参构造可以new
+     * @param clazz class
+     * @param <T> T
+     * @return newInstance
+     * @throws Exception 无可访问的constructor异常
+     */
     @SuppressWarnings("unchecked")
     public static <T> T newInstance(Class<T> clazz) throws Exception {
         if (clazz.isPrimitive()) {
-            return (T)PRIMITIVES_DEFAULT.get(clazz);
+            return (T) PRIMITIVES_DEFAULT.get(clazz);
         }
         try {
             return clazz.newInstance();
